@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hackathon Domains | Qiskit Fall Fest 2026</title>
+
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .domains-page {
+            min-height: 100vh;
+            padding: 55px 0 70px;
+        }
+
+        .domains-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .domains-heading h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin: 18px 0 12px;
+        }
+
+        .domains-heading p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .domain-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .domain-card {
+            background: #fff;
+            color: #1e293b;
+            border: 1px solid #dbe5f5;
+            border-top: 4px solid var(--qiskit-blue, #0f62fe);
+            border-radius: 14px;
+            padding: 28px 24px;
+            box-shadow: 0 8px 25px rgba(30, 50, 90, 0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .domain-number {
+            color: #0f62fe;
+            background: #eaf1ff;
+            padding: 7px 12px;
+            border-radius: 7px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .domain-icon {
+            color: #0f62fe;
+            font-size: 2rem;
+            margin: 24px 0 16px;
+        }
+
+        .domain-card h2 {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+
+        .domain-card p {
+            color: #64748b;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .domain-label {
+            color: #0f62fe;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .domain-footer {
+            margin-top: auto;
+            padding-top: 18px;
+            border-top: 1px solid #e2e8f0;
+            width: 100%;
+            color: #64748b;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 40px;
+            text-decoration: none;
+            background: #0f62fe;
+            color: white;
+            padding: 13px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .back-button:hover {
+            background: #0043ce;
+            transform: translateY(-2px);
+        }
+
+        .back-wrapper {
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .domain-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .domains-page {
+                padding: 35px 0 50px;
+            }
+
+            .domain-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .domain-card {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="brand-title">Qiskit Fall Fest 2026</div>
+
+            <div class="header-right-side">
+                <div class="logos-wrapper">
+                    <img src="static/images/pragati-logo.png"
+                         alt="Pragati Engineering College Logo"
+                         class="logo college-logo">
+
+                    <span class="logo-divider">|</span>
+
+                    <img src="static/images/ibm.jpeg"
+                         alt="IBM Quantum Logo"
+                         class="logo qiskit-logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="domains-page">
+        <div class="container">
+
+            <div class="domains-heading">
+                <span class="badge-tag">Day 02 · October 14, 2026</span>
+
+                <h1>Hackathon Problem Statements</h1>
+
+                <p>
+                    Explore the three challenge domains for Qiskit Fall Fest 2026.
+                    Build innovative solutions using quantum computing and
+                    quantum machine learning.
+                </p>
+            </div>
+
+            <div class="domain-grid">
+
+                <!-- Domain 1 -->
+                <article class="domain-card">
+                    <span class="domain-number">DOMAIN 01</span>
+
+                    <i class="fa-solid fa-microscope domain-icon"></i>
+
+                    <h2>
+                        Hybrid Quantum–Classical Breast Lesion Classification
+                    </h2>
+
+                    <span class="domain-label">Healthcare · Quantum ML</span>
+
+                    <p>
+                        Develop a hybrid quantum–classical machine learning
+                        model using compressed ConvNeXt features and a
+                        Variational Quantum Circuit (VQC) to classify breast
+                        lesions into Benign, Atypical, and Malignant categories
+                        using the BRACS dataset. Compare its performance with
+                        a classical model having a comparable number of
+                        trainable parameters.
+                    </p>
+
+                    <div class="domain-footer">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <strong>Goal:</strong> Evaluate classification
+                        performance against a comparable classical model.
+                    </div>
+                </article>
+
+                <!-- Domain 2 -->
+                <article class="domain-card">
+                    <span class="domain-number">DOMAIN 02</span>
+
+                    <i class="fa-solid fa-dna domain-icon"></i>
+
+                    <h2>
+                        Quantum Kernel Learning for Cancer Prediction
+                    </h2>
+
+                    <span class="domain-label">Healthcare · Quantum Kernels</span>
+
+                    <p>
+                        Build a quantum kernel-based machine learning model
+                        to predict clinical outcomes, such as survival risk,
+                        EGFR/KRAS mutation status using the TCGA-LUAD dataset,
+                        or axillary lymph node metastasis using the BCNB
+                        dataset. Compare its performance with classical
+                        SVM and XGBoost models.
+                    </p>
+
+                    <div class="domain-footer">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <strong>Goal:</strong> Compare quantum kernel learning
+                        with classical prediction models.
+                    </div>
+                </article>
+
+                <!-- Domain 3 -->
+                <article class="domain-card">
+                    <span class="domain-number">DOMAIN 03</span>
+
+                    <i class="fa-solid fa-seedling domain-icon"></i>
+
+                    <h2>
+                        Quantum Machine Learning for Indian Agricultural Productivity
+                    </h2>
+
+                    <span class="domain-label">Agriculture · Quantum Regression</span>
+
+                    <p>
+                        Develop a Variational Quantum Regression model to
+                        forecast crop yield in India using features such as
+                        rainfall, fertilizer usage, and cultivated area.
+                        Compare prediction accuracy, model complexity, and
+                        computational efficiency with Random Forest
+                        and XGBoost.
+                    </p>
+
+                    <div class="domain-footer">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <strong>Goal:</strong> Evaluate quantum regression
+                        against established crop-yield prediction models.
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="back-wrapper">
+                <a href="index.html#schedule" class="back-button">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Event Schedule
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>
+                &copy; 2026 Qiskit Fall Fest at Pragati Engineering College.
+                Powered by IBM Quantum &amp; Qiskit.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
